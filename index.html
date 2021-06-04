@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral" />
+    <link href="cssmenu/cssmenu.css" rel="stylesheet" />
+    <title>Balveer's Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css" tpy>
+    <style>
+        body {
+            margin: 0;
+            background: #FFFFFF;
+        }
+        
+        #menuDemo {
+            text-align: center;
+            padding: 30px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="menu-icon-wrapper">
+                <div class="menu-icon" onclick="toggleCssMenu(this)">
+                    <div class="three-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="#welcome-section">Home</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <script>
+                function toggleCssMenu(icon) {
+                    var cssmenu = document.getElementById('cssmenu');
+                    if (icon.className.indexOf('active') == -1) {
+                        icon.className = 'menu-icon active';
+                        cssmenu.style.display = "block";
+                        setTimeout(function() {
+                            cssmenu.className = 'active';
+                        }, 0);
+                    } else {
+                        icon.className = 'menu-icon';
+                        cssmenu.className = '';
+                        setTimeout(function() {
+                            cssmenu.style.display = "none";
+                        }, 411);
+                    }
+                }
+            </script>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h1>Hello,I'm <br><strong>Balveer Singh</strong></h1>
+            <p>AND THIS IS MY RESUME</p>
+        </section>
+        <section id="projects">
+            <h1>Featured <strong>Portfolio</strong></h1>
+            <div class="pcontainer">
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/product_landing.png" alt="">
+                    <h3>Product Landing page</h3>
+                    <p>An antivirus product.</p>
+                    <a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/documentation.png" alt="">
+                    <h3>Documentation page</h3>
+                    <p>A python documentation page.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/mywork.png" alt="">
+                    <h3>Template</h3>
+                    <p>Template for a journey website.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/surveyform.png" alt="">
+                    <h3>Survey Form</h3>
+                    <p>A feedback form</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/surveyform1.png" alt="">
+                    <h3>Survey Form</h3>
+                    <p>A contact form.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/TEMPLATE-2.png" alt="">
+                    <h3>Template</h3>
+                    <p>Template for product landing.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/freecodecamp projects/Portfolio website/images/blog.png" alt="">
+                    <h3>A Blog Page</h3>
+                    <p>Blog written on Humanity</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
