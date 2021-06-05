@@ -1,0 +1,21 @@
+#cssmenu ul {
+    position: fixed;
+    width: 100%;
+}
+
+.pcontainer {
+    grid-template-areas: 'item1 item2 item3''item4 item5 item6''item7 item7 item7';
+    display: grid;
+}
+
+.pitems {
+    height: inherit;
+}
+
+.pitems img {
+    height: 73%;
+}
+
+.onlybig {
+    display: block;
+}
