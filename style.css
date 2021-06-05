@@ -32,9 +32,9 @@ body {
     display: block;
     z-index: -1;
     top: 0;
-    background: grey url("/images/my_image0.png") no-repeat center;
-    background: url("/images/my_image1.jpg") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
-    background: url("/images/04.png") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
+    background: grey url("/freecodecamp\ projects/Portfolio\ website/images/my_image0.png") no-repeat center;
+    background: url("/freecodecamp\ projects/Portfolio\ website/images/my_image1.jpg") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
+    background: url("/freecodecamp\ projects/Portfolio\ website/images/04.png") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
     /* opacity: .7; */
 }
 
@@ -97,4 +97,9 @@ body {
 .pitems a {
     text-align: center;
     color: white;
+    /* background-size: ; */
+}
+
+.onlybig {
+    display: none;
 }
