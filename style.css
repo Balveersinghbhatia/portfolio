@@ -2,13 +2,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(58, 56, 56);
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection {
+    background-color: black;
+    color: white;
 }
 
 
 /* nav section */
 
-#navbar
-    height: 8vh;
+#navbar {
+    background: white;
+    /* height: 8vh; */
 }
 
 
@@ -31,9 +41,9 @@ body {
     display: block;
     z-index: -1;
     top: 0;
-    background: grey url("/images/my_image0.png") no-repeat center;
-    background: url("/images/my_image1.jpg") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
-    background: url("/images/04.png") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
+    background: grey url("/freecodecamp\ projects/Portfolio\ website/images/my_image0.png") no-repeat center;
+    background: url("/freecodecamp\ projects/Portfolio\ website/images/my_image1.jpg") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
+    background: url("/freecodecamp\ projects/Portfolio\ website/images/04.png") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
     /* opacity: .7; */
 }
 
@@ -59,7 +69,7 @@ body {
     /* height: 100vh; */
     display: flex;
     flex-direction: column;
-    background: #020202d2;
+    /* background: #020202d2; */
     color: white;
     text-align: center;
 }
@@ -99,6 +109,127 @@ body {
     /* background-size: ; */
 }
 
-.onlybig {
-    display: none;
+
+/* Resume */
+
+#resume {
+    background-color: rgb(58, 56, 56);
+}
+
+#resume h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+#resume h3 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+#Education {
+    display: flex;
+    flex-direction: column;
+}
+
+.education {
+    border: 1px solid rgb(255, 0, 0);
+    margin: 10px;
+    padding: 13px 15px;
+    background: rgb(143, 143, 143);
+}
+
+
+/* .education p::before {
+    content: "\e979";
+
+} */
+
+
+/*About me  */
+
+#Aboutme {
+    margin: 0 0 100px 0;
+}
+
+#Aboutme h2 {
+    color: white;
+}
+
+#Aboutme p {
+    line-height: 30px;
+    /* margin: 0; */
+    font-size: 1.3rem;
+    color: rgb(143, 143, 143);
+}
+
+#aa {
+    width: 70px;
+    background-color: red;
+    color: black;
+}
+
+#ab {
+    background-color: rgba(175, 175, 175, 0.452);
+}
+
+#Aboutme .btn {
+    /* border: 1px solid orange; */
+    padding: 20px 25px;
+    border-radius: 28px;
+    text-decoration: none;
+    display: inline-block;
+    /* width: 120px; */
+    color: white;
+    margin: 10px 10px;
+}
+
+
+/* CONTACT */
+
+#contact h2,
+#contact h3 {
+    color: white
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: rgb(165, 165, 165)
+}
+
+
+/* Footer */
+
+footer {
+    /* background-color: pink; */
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div a {
+    margin: 15px 10px;
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 50px;
+}
+
+footer div a img {
+    height: 50px;
+    border-radius: 100%;
+    width: 50px;
 }
