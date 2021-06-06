@@ -2,13 +2,190 @@
 <html lang="en">
 
 <head>
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balveer's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral" />
+    <link href="cssmenu/cssmenu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="big_screen.css" type="text/css" media="screen and (min-width:1000px)">
+    <meta name="discription" content="This is a personal portfolio website created by balveer singh">
+    <style>
+        body {
+            margin: 0;
+            background: #FFFFFF;
+        }
+        
+        #menuDemo {
+            text-align: center;
+            padding: 30px 8px;
+        }
+    </style>
 </head>
 
 <body>
-   
-    <h1> Page under maintanence </h1>
-    <p> This page is under maintenance pls visit later or contact the author </p>
+    <header>
+        <nav id="navbar">
+            <div class="menu-icon-wrapper">
+                <div class="menu-icon" onclick="toggleCssMenu(this)">
+                    <div class="three-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="#welcome-section">Home</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#Aboutme">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <script>
+                function toggleCssMenu(icon) {
+                    var cssmenu = document.getElementById('cssmenu');
+                    if (icon.className.indexOf('active') == -1) {
+                        icon.className = 'menu-icon active';
+                        cssmenu.style.display = "block";
+                        setTimeout(function() {
+                            cssmenu.className = 'active';
+                        }, 0);
+                    } else {
+                        icon.className = 'menu-icon';
+                        cssmenu.className = '';
+                        setTimeout(function() {
+                            cssmenu.style.display = "none";
+                        }, 411);
+                    }
+                }
+            </script>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h1>Hello,I'm <br><strong>Balveer Singh</strong></h1>
+            <p>AND THIS IS MY RESUME</p>
+        </section>
+        <section id="projects">
+            <h1>Featured <strong>Portfolio</strong></h1>
+            <div class="pcontainer">
+                <div class="pitems">
+                    <img src="/images/product_landing.png" alt="">
+                    <h3>Product Landing page</h3>
+                    <p>An antivirus product.</p>
+                    <a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/images/documentation.png" alt="">
+                    <h3>Documentation page</h3>
+                    <p>A python documentation page.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/images/mywork.png" alt="">
+                    <h3>Template</h3>
+                    <p>Template for a journey website.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/images/surveyform.png" alt="">
+                    <h3>Survey Form</h3>
+                    <p>A feedback form</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/images/surveyform1.png" alt="">
+                    <h3>Survey Form</h3>
+                    <p>A contact form.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/images/TEMPLATE-2.png" alt="">
+                    <h3>Template</h3>
+                    <p>Template for product landing.</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems">
+                    <img src="/images/blog.png" alt="">
+                    <h3>A Blog Page</h3>
+                    <p>Blog written on Humanity</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems onlybig">
+                    <img src="/images/tribute.png" alt="">
+                    <h3>Tribute Page</h3>
+                    <p>My first page on SGGS</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+                <div class="pitems onlybig">
+                    <img src="/freecodecamp projects/Portfolio website/images/somesurvey.png" alt="">
+                    <h3>A survey form</h3>
+                    <p>First survey form</p><a href="https://scented-poles.000webhostapp.com/project_4/">View more</a>
+                </div>
+            </div>
+        </section>
+        <section id="resume">
+            <h2> My <strong>Resume</strong></h2>
+            <h3>Education</h3>
+            <div>
+                <div id="Education">
+                    <div class="education">
+                        <p>November 2020-2023</p>
+                        <h3> Diploma in Computer Engineering </h3>
+                        <p>I am pursuing diploma in Computer engineering at Rc technical college It is a four year course
+                        </p>
+                    </div>
+                    <div class="education">
+                        <p>March 2021-May 2021</p>
+                        <h3> Frontend development course </h3>
+                        <p>I have done frontend development course from <em>freecodecamp</em> and completed well</p>
+
+                    </div>
+                    <div class="education">
+                        <p>March 2021-May 2021</p>
+                        <h3>Web development Course</h3>
+                        <p>I have also done webdevelopment course from <em>Codewithharry</em> youtube channel</p>
+                    </div>
+                </div>
+                <div id="Experience">
+                    <h3>Experience</h3>
+                    <div class="education">
+                        <p>March 2021-present</p>
+                        <h3>I have made more than 20 projects</h3>
+                        <p>See them
+                            <a href="#projects">here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Aboutme">
+            <h2>About <strong>Me</strong></h2>
+            <div>
+                <p>I am Balveer Singh, a frontend developer and learner. I started my journey becuase of my curosity of how websites are made and also the demand of web developers was high </p>
+                <p>I am currently learning everyday and make myself better</p>
+                <p>I help business grow by making them cool websites</p>
+            </div> <a href="https://www.freelancer.com/u/BalveerSingh1" class="btn" id="aa">
+                Hire Me
+            </a>
+            <a href="/images/facebook.svg" download="Balveer's resume" class="btn" id="ab">Download CV</a>
+        </section>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <h3>My Contact Details</h3>
+            <p> <span>Email</span> <br> Balveerbhatiakk@gmail.com</p>
+            <p> <span>Number</span> <br>1234567890</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2021 All rights reserved</p>
+        <div>
+            <a href="https://twitter.com/BalveerBhatia1"><img src="/images/twitter1.svg" alt=""></a>
+            <a href="https://github.com/Balveersinghbhatia"><img src="/images/github.png" alt=""></a>
+            <a href="https://instagram.com/__punjabi___munda___"><img src="/images/instagram1.svg" alt=""></a>
+            <a href="#"><img src="/images/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/balveer-singh-bhatia-2837331b4/"><img src="/images/linkedin.svg" alt=""></a>
+        </div>
+    </footer>
+    <script async id="__bs_script__" src="https://localhost:12719/browser-sync/browser-sync-client.js?v=2.26.10"></script>
+
 </body>
 
 </html>
