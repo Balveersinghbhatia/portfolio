@@ -1,11 +1,16 @@
+body {
+    background-color: rgb(58, 56, 56);
+}
+
 #cssmenu ul {
     position: fixed;
+    top: 0;
     width: 100%;
 }
 
 .pcontainer {
-    display: grid;
     grid-template-areas: 'item1 item2 item3''item4 item5 item6''item7 item7 item7';
+    display: grid;
 }
 
 .pitems {
