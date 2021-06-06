@@ -24,3 +24,7 @@ body {
 .onlybig {
     display: block;
 }
+footer div a {
+    margin: 15px 10px;
+}
+
