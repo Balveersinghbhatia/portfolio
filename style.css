@@ -8,17 +8,21 @@ body {
 p::selection,
 h1::selection,
 h2::selection,
-h3::selection {
+h3::selection,
+strong::selection{
     background-color: black;
     color: white;
 }
-
+:root {
+    --heading: 'PT Serif', serif;
+    --second-heading: 'Roboto', sans-serif;
+    --para: 'Baloo 2', cursive;
+}
 
 /* nav section */
 
 #navbar {
     background: white;
-    /* height: 8vh; */
 }
 
 
@@ -44,13 +48,13 @@ h3::selection {
     background: grey url("/images/my_image0.png") no-repeat center;
     background: url("/images/my_image1.jpg") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
     background: url("/images/04.png") no-repeat center/contain, linear-gradient(0deg, #641008 0, black);
-    /* opacity: .7; */
 }
 
 #welcome-section h1 {
-    /* background: blanchedalmond; */
     color: white;
-    font-size: 2rem;
+    font-family: 'Cookie', cursive;
+    text-shadow: 2px 3px 1px black;
+    font-size: 3rem;
     position: relative;
     top: 110px;
     text-align: center;
@@ -58,44 +62,48 @@ h3::selection {
 
 #welcome-section p {
     color: rgb(58, 56, 56);
+    font-family: var(--para);
     position: relative;
-    top: 80px
+    top: 80px;
+     font-size: 2vh;
 }
 
 
 /* projects section */
 
 #projects {
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
-     background-color: rgb(58, 56, 56);
+    background-color: rgb(58, 56, 56);
     color: white;
     text-align: center;
 }
 
 #projects h1 {
     text-align: center;
+    font-family: var(--heading);
+    font-size: 2rem
 }
 
 .pcontainer {
-    /* background: pink; */
     height: inherit;
 }
 
 .pitems {
-    /* background: #641008; */
     height: 50%;
-    /* border: 1px solid orange; */
     margin: 10px;
 }
 
 .pitems h3 {
     text-align: center;
+     font-family: var(--second-heading);
+    font-size: 1.4rem;
 }
 
 .pitems p {
     text-align: center;
+     font-family: var(--para);
+    font-size: 1.2rem;
 }
 
 .pitems img {
@@ -106,7 +114,6 @@ h3::selection {
 .pitems a {
     text-align: center;
     color: white;
-    /* background-size: ; */
 }
 
 
@@ -119,12 +126,18 @@ h3::selection {
 #resume h2 {
     text-align: center;
     color: white;
-    font-size: 1.8rem;
+     font-family: var(--heading);
+    font-size: 2rem;
 }
 
 #resume h3 {
     color: white;
-    font-size: 1.3rem;
+   font-family: var(--second-heading);
+    font-size: 1.4rem;
+}
+#resume p {
+    font-family: var(--para);
+    font-size: 1.2rem;
 }
 
 #Education {
@@ -139,13 +152,6 @@ h3::selection {
     background: rgb(143, 143, 143);
 }
 
-
-/* .education p::before {
-    content: "\e979";
-
-} */
-
-
 /*About me  */
 
 #Aboutme {
@@ -155,12 +161,15 @@ h3::selection {
 
 #Aboutme h2 {
     color: white;
+      font-family: var(--heading);
+    text-align: center;
+    font-size: 2rem;
 }
 
 #Aboutme p {
     line-height: 30px;
-    /* margin: 0; */
-    font-size: 1.3rem;
+    font-family: var(--para);
+    font-size: 1.4rem;
     color: rgb(143, 143, 143);
 }
 
@@ -175,12 +184,10 @@ h3::selection {
 }
 
 #Aboutme .btn {
-    /* border: 1px solid orange; */
     padding: 20px 25px;
     border-radius: 28px;
     text-decoration: none;
     display: inline-block;
-    /* width: 120px; */
     color: white;
     margin: 10px 10px;
 }
@@ -188,21 +195,28 @@ h3::selection {
 
 /* CONTACT */
 #contact{ background-color: rgb(58, 56, 56);}
-#contact h2,
+
 #contact h3 {
-    color: white
+    font-family: var(--second-heading);
+    color: white;
+    font-size: 1.2rem;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-family: var(--heading);
 }
 
 #contact p {
-    font-size: 1.2rem;
-    color: rgb(165, 165, 165)
+    font-size: 1.4rem;
+    color: rgb(165, 165, 165);
+    font-family: var(--para);
 }
-
-
-/* Footer */
-
+/* footer */
 footer {
-    /* background-color: pink; */
+    
     height: 100px;
     color: white;
      background-color: rgb(58, 56, 56);
