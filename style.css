@@ -168,6 +168,7 @@ strong::selection{
 
 #Aboutme p {
     line-height: 30px;
+    text-indent: 10px;
     font-family: var(--para);
     font-size: 1.4rem;
     color: rgb(143, 143, 143);
