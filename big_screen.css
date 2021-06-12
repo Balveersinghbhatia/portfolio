@@ -17,11 +17,21 @@ body {
     height: inherit;
 }
 
-
-.onlybig {
-    display: block;
-}
 footer div a {
     margin: 15px 10px;
 }
+#Aboutme {
+  text-align: center;
+}
+#Aboutme p {
+  text-align: left;
+}
+#Aboutme .btn {
+  width: 45%;
+  font-weight: bold;
+  font-family: var(--second-heading);
+}
 
+#contact {
+  text-indent: 10px;
+}
